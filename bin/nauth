@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+let nauth = require("../index");
+let program = require("commander");
+let pkg = require("../package.json");
+let chalk = require("chalk");
+
+program.version(pkg.version).usage("<command> [options]");
+
+// Set help info
+program.on("--help", function () {
+    console.log(chalk.gray("before"));
+});
+
+program.command("set").description("nauth set name secret").action(nauth.set);
+
+program.command("get").description("nauth get name").action(nauth.get);
+
+// Display help if wrong cmd
+program.action(function (cmd, options) {
+    program.help();
+});
+
+program.parse(process.argv);

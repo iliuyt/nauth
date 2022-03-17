@@ -1,0 +1,29 @@
+{
+  "name": "nauth",
+  "version": "0.0.1",
+  "author": {
+    "name": "iliuyt",
+    "email": "liuytchrome@gmail.com",
+    "url": "https://github.com/iliuyt"
+  },
+  "description": "totp manager",
+  "preferGlobal": true,
+  "bin": {
+    "nauth": "./bin/nauth"
+  },
+  "directories": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.3",
+    "crypto": "^1.0.1",
+    "inquirer": "^4.0.0",
+    "totp-generator": "0.0.13"
+  },
+  "keywords": [],
+  "repository": {},
+  "bugs": {},
+  "devDependencies": {}
+}
