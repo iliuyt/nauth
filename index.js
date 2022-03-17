@@ -34,7 +34,6 @@ let mkdirSync = function (dirpath, mode) {
 module.exports = {
     set: function () {
         let data = mkdirSync(nauthPath);
-        console.log(data, nauthPath);
         let opts = process.argv.slice(2);
         let name = opts[1];
         let value = opts[2];
